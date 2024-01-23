@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.scss'
 
 const App = () => {
 
@@ -19,9 +20,13 @@ const App = () => {
   }
   return (
 
-    <div>
-      <h1>{password}</h1>
+    <div className='container'>
+      <h1>Password Generator</h1>
+      <h2>{password}</h2>
+      <div className="buttons">
       <button onClick={Generate}>Generate</button>
+      <button onClick={()=>setPassword('')}>Clear</button>
+      </div>
     </div>
   )
 }

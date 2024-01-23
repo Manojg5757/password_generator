@@ -1,0 +1,23 @@
+.container{
+    text-align: center;
+    h1{
+        color: gray;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        button{
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            background: gray;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    
+}
